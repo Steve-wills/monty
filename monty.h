@@ -61,5 +61,28 @@ void m_rotr(stack_t **stack, unsigned int line_number);
 void m_stack(stack_t **stack, unsigned int line_number);
 void m_queue(stack_t **stack, unsigned int line_number);
 
+/**
+ * struct globVar - global variable
+ * @file: file name
+ * @buff: Getline buffer
+ * @tsp: Getline counter
+ * @dictn: instruction dictionary
+ * @head: pointer to list
+ * @line_number: Stores file current line
+ * @MODE: Program configuration stack or queue
+ */
+typedef struct globVar
+{
+	FILE *file;
+	char *buff;
+	size_t tsp;
+	instruction_t *dictn;
+	stack_t *head;
+	unsigned int line_number;
+	int MODE;
+} varbl;
+
+extern varbl var;
+
 
 #endif
