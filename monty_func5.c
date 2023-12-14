@@ -44,6 +44,7 @@ void m_mod(stack_t **stack, unsigned int line_number)
 	m_pop(stack, line_number);
 }
 
+
 /**
  * m_pchar - prints the char at the top of the stack
  * @stack: Double linked list
