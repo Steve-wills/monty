@@ -87,5 +87,7 @@ extern varbl var;
 int varStart(varbl *var);
 instruction_t *create_inst();
 int funcs_call(varbl *var, char *opcode);
+void free_all(void);
+int _isdigit(char *string);
 
 #endif
