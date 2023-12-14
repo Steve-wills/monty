@@ -55,6 +55,9 @@ void m_div(stack_t **stack, unsigned int line_number);
 void m_mul(stack_t **stack, unsigned int line_number);
 void m_mod(stack_t **stack, unsigned int line_number);
 void m_pchar(stack_t **stack, unsigned int line_number);
+void m_pstr(stack_t **stack, unsigned int line_number);
+void m_rotl(stack_t **stack, unsigned int line_number);
+void m_rotr(stack_t **stack, unsigned int line_number);
 
 
 #endif
