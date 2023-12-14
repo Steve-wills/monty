@@ -84,5 +84,8 @@ typedef struct globVar
 
 extern varbl var;
 
+int varStart(varbl *var);
+instruction_t *create_inst();
+int funcs_call(varbl *var, char *opcode);
 
 #endif
